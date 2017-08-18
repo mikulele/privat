@@ -29,7 +29,7 @@
 }
 
 @font-face{
-	src: url('../fonts/RobotoCondensed-bold.ttf'); 
+	src: url('../fonts/RobotoCondensed-Bold.ttf'); 
 	font-family: 'Robotocb';
 }
 
@@ -598,7 +598,9 @@ section .event .event-content .readmore-toggle, section .event .event-content .m
 section .event .col-md-10{
 	margin-bottom: 80px;
 }
-
+.col-sm-12{
+	padding: 0 !important;
+}
 section .event .head span, section .event .head a{
 	color: #3fbcef;
 	text-decoration: none;
@@ -606,6 +608,10 @@ section .event .head span, section .event .head a{
 
 section .event .title-event{
 	clear: both;
+}
+
+.img{
+	margin-right: 100px;
 }
 
 section .event .halaman{
@@ -693,12 +699,13 @@ section .contact .kontak-title h3{
 	margin: 0;
 }
 
-section .contact .kontak-content span{
+section .contact .kontak-content a, section .contact .kontak-content span{
 	color: #7e7e7e;
 	font-family: 'Proxima';
 	font-size: 14px;
 	line-height: 25px;
 	letter-spacing: 1px;
+	text-decoration: none;
 }
 
 section .contact .kontak-content p{
@@ -739,4 +746,175 @@ footer .right a{
 	color: #FFF;
 	font-size: 14px;
 	font-family: 'Proxima';
+}
+
+@media screen and (max-width: 768px){
+	header{
+    	background-image: url('../img/pict/responsive.jpg');
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	width: 100%;
+    	height: 800px;
+	}
+
+	section .visi-misi{
+		background: url('../img/pict/responsivevisi.jpg');
+		background-position: center;
+	}
+
+	.img{
+		margin-right: 0;
+	}
+	.button-c:hover{
+	background:#fff;
+	opacity: 0.5 ;
+	transition: all .3s ease;
+	color: #39aed8;
+	border: solid 1px #39aed8;
+	text-decoration: none;
+	}
+	section .visi-misi .visi-title h3{
+		font-size: 20px;
+		text-align: center;
+		margin: 0;
+		padding: 100px 0px;
+	}
+	.misi{
+		padding-top: 50px;
+	}
+	.misi h3{
+		width: 20%;
+		float: left;
+	}
+	.misi p{
+		padding-top: 10px;
+		padding-left: 5px;
+		width: 80%;
+		float: left;
+	}
+	.visi p{
+		padding-top: 10px;
+	}
+	.rieut{
+	}
+	section .brosur .butn{
+		cursor: pointer; 
+	}
+	footer{
+		height: 100px;
+	}
+
+	.left{
+		clear: both;
+		width: 100%;
+		text-align: center;
+		margin-top: 5px;
+	}
+
+	.right{
+		clear: both;
+		text-align: center;
+		width: 100%;
+		position: relative;
+		bottom: 10px;
+	}
+	.logo-uu img{
+		width: 60px;
+		margin: 0 auto;
+		padding: 15px 0px;
+	}
+	.logo-u{
+		width: 80%;
+		margin: 0 auto;
+		z-index: 99;
+		margin-top: -150px;
+		padding: 30px 0px;
+	}
+	.icon{
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.logo-uu .bagi-5{
+		width: 33.33%;
+		float: left;
+		margin: 0 auto;
+	}
+	.logo-uu .bagi-6{
+		width: 50%;
+		float: left;
+		margin: 0 auto;
+	}
+	.logo-uu .ipg{
+		float: left;
+	}
+	.testimoni-title h3 {
+		font-size: 20px !important;
+	}
+	.ket p {
+		font-size: 15px !important;
+	}
+	section .info .row .content-info{
+		padding:0;
+	}
+	section .info{
+		padding-top: 50px;
+	}
+	section .info .title h3{
+		font-size: 20px;
+	}
+	section .info .ket p{
+		font-size: 14px;
+	}
+	section .brosur{
+		height: 200px;
+	}
+	.download h1 {
+		margin-top: 80px !important;
+		margin-bottom: 25px !important;
+		width: 100% !important;
+		font-size: 22px !important;
+	}
+	.event-title h3{
+		font-size: 20px !important;
+	}
+	section .brosur .butn{
+		font-size: 15px !important;
+	}
+	.contact-title h3 {
+		font-size: 25px !important;
+	}
+	section .contact .contact-title{
+		margin-bottom: 60px;
+	}
+	section .testimoni .biodata{
+		width: 50%;
+	}
+	section .testimoni img {
+		margin: 0px 35px;
+	}
+	section .testimoni .testimoni-content{
+		width: 100%;
+		padding-bottom: 100px;
+	}
+	section .testimoni .right{
+		margin:-80px 0px;
+		margin-left: 30px;
+	}
+	section .testimoni .left{
+		margin-left: -60px;
+	}
+	section .testimoni .glyphicon{
+		top: 86.5%;
+	}
+	section .event .head p{
+		float: left;
+		padding-bottom: 10px;
+		top:0;
+		margin: 0;
+		left: 0;
+	}
+	footer {
+		margin-top: 250px;
+	}
 }
